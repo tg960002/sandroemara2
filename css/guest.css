@@ -113,3 +113,16 @@ svg {
 .no-gap-bottom {
     margin-bottom: -0.75rem !important;
 }
+/* 🔥 Disattiva la colonna sinistra fissa su desktop e usa solo layout mobile */
+@media (min-width: 576px) {
+  /* Nasconde la sezione sinistra (desktop mode) */
+  #root > .sticky-top {
+    display: none !important;
+  }
+
+  /* Porta la sezione di destra a larghezza piena */
+  #root > div:not(.sticky-top) {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
