@@ -115,20 +115,5 @@ svg {
     margin-bottom: -0.75rem !important;
 }
 
-/* Desktop: nascondi la colonna sinistra fissa
-   e porta la colonna destra al 100% larghezza */
-@media (min-width: 576px) {
-  /* nasconde il pannello sinistro (quello sticky-top) */
-  #root > .sticky-top {
-    display: none !important;
-  }
-  /* forza la colonna destra a tutta larghezza */
-  #root > .col-sm-7,
-  #root > .col-md-6,
-  #root > .col-lg-5,
-  #root > .col-xl-4,
-  #root > .col-xxl-3 {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-  }
-}
+
+
