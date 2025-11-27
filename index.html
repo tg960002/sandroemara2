@@ -414,129 +414,104 @@
                     </div>
                 </section>
 
-                <section class="bg-white-black pb-4 pt-2">
+               <section class="bg-white-black pb-4 pt-2">
                     <div class="container">
                 
                         <h2 class="font-esthetic text-center mb-4" style="font-size: 2rem;">
                             Programma della Giornata
                         </h2>
                 
-                        <div class="position-relative mx-auto" style="max-width: 600px;">
+                        <div class="timeline mx-auto" style="max-width: 600px; position: relative;">
                 
-                            <!-- LINEA PERFETTAMENTE ALLINEATA TRA PRIMO E ULTIMO STEP -->
-                            <div class="timeline-line position-absolute start-50 translate-middle"
-                                 style="
-                                    width: 3px;
-                                    background-color: rgba(108,117,125,0.3);
-                                    top: 40px;          /* parte sotto il primo cerchietto */
-                                    bottom: 40px;       /* termina sopra l’ultimo cerchietto */
-                                    z-index: 0;">
+                            <!-- LINEA -->
+                            <div style="
+                                position: absolute;
+                                left: 15px;
+                                top: 10px;
+                                bottom: 10px;
+                                width: 2px;
+                                background: rgba(108,117,125,0.35);
+                            "></div>
+                
+                            <!-- STEP -->
+                            <div style="position: relative; padding-left: 50px; margin-bottom: 40px;">
+                                <div style="
+                                    position: absolute;
+                                    left: 6px;
+                                    top: 0;
+                                    width: 18px;
+                                    height: 18px;
+                                    border-radius: 50%;
+                                    background: var(--bs-body-bg);
+                                    border: 3px solid var(--bs-secondary);
+                                "></div>
+                                <h5 class="fw-bold m-0">Arrivo ospiti</h5>
+                                <p class="small m-0">Ore 09:30</p>
                             </div>
                 
-                            <!-- STEP 1 -->
-                            <div class="row g-0 mb-5 position-relative">
-                                <div class="col-6 text-end pe-3">
-                                    <h5 class="m-0 fw-bold">Arrivo ospiti</h5>
-                                    <p class="m-0 small">Ore 09:30</p>
-                                </div>
-                                <div class="col-6"></div>
-                
-                                <!-- cerchio -->
-                                <div class="position-absolute start-50 translate-middle"
-                                     style="
-                                        width: 20px;
-                                        height: 20px;
-                                        border-radius: 50%;
-                                        background-color: var(--bs-body-bg);
-                                        border: 3px solid var(--bs-secondary);
-                                        top: 0;">
-                                </div>
+                            <div style="position: relative; padding-left: 50px; margin-bottom: 40px;">
+                                <div style="
+                                    position: absolute;
+                                    left: 6px;
+                                    top: 0;
+                                    width: 18px;
+                                    height: 18px;
+                                    border-radius: 50%;
+                                    background: var(--bs-body-bg);
+                                    border: 3px solid var(--bs-secondary);
+                                "></div>
+                                <h5 class="fw-bold m-0">Cerimonia</h5>
+                                <p class="small m-0">Ore 10:00</p>
                             </div>
                 
-                            <!-- STEP 2 -->
-                            <div class="row g-0 mb-5 position-relative">
-                                <div class="col-6"></div>
-                                <div class="col-6 ps-3">
-                                    <h5 class="m-0 fw-bold">Cerimonia</h5>
-                                    <p class="m-0 small">Ore 10:00</p>
-                                </div>
-                
-                                <div class="position-absolute start-50 translate-middle"
-                                     style="
-                                        width: 20px;
-                                        height: 20px;
-                                        border-radius: 50%;
-                                        background-color: var(--bs-body-bg);
-                                        border: 3px solid var(--bs-secondary);
-                                        top: 0;">
-                                </div>
+                            <div style="position: relative; padding-left: 50px; margin-bottom: 40px;">
+                                <div style="
+                                    position: absolute;
+                                    left: 6px;
+                                    top: 0;
+                                    width: 18px;
+                                    height: 18px;
+                                    border-radius: 50%;
+                                    background: var(--bs-body-bg);
+                                    border: 3px solid var(--bs-secondary);
+                                "></div>
+                                <h5 class="fw-bold m-0">Aperitivo</h5>
+                                <p class="small m-0">Ore 12:00</p>
                             </div>
                 
-                            <!-- STEP 3 -->
-                            <div class="row g-0 mb-5 position-relative">
-                                <div class="col-6 text-end pe-3">
-                                    <h5 class="m-0 fw-bold">Aperitivo</h5>
-                                    <p class="m-0 small">Ore 12:00</p>
-                                </div>
-                                <div class="col-6"></div>
-                
-                                <div class="position-absolute start-50 translate-middle"
-                                     style="
-                                        width: 20px;
-                                        height: 20px;
-                                        border-radius: 50%;
-                                        background-color: var(--bs-body-bg);
-                                        border: 3px solid var(--bs-secondary);
-                                        top: 0;">
-                                </div>
+                            <div style="position: relative; padding-left: 50px; margin-bottom: 40px;">
+                                <div style="
+                                    position: absolute;
+                                    left: 6px;
+                                    top: 0;
+                                    width: 18px;
+                                    height: 18px;
+                                    border-radius: 50%;
+                                    background: var(--bs-body-bg);
+                                    border: 3px solid var(--bs-secondary);
+                                "></div>
+                                <h5 class="fw-bold m-0">Pranzo / Ricevimento</h5>
+                                <p class="small m-0">Ore 13:00</p>
                             </div>
                 
-                            <!-- STEP 4 -->
-                            <div class="row g-0 mb-5 position-relative">
-                                <div class="col-6"></div>
-                                <div class="col-6 ps-3">
-                                    <h5 class="m-0 fw-bold">Pranzo / Ricevimento</h5>
-                                    <p class="m-0 small">Ore 13:00</p>
-                                </div>
-                
-                                <div class="position-absolute start-50 translate-middle"
-                                     style="
-                                        width: 20px;
-                                        height: 20px;
-                                        border-radius: 50%;
-                                        background-color: var(--bs-body-bg);
-                                        border: 3px solid var(--bs-secondary);
-                                        top: 0;">
-                                </div>
-                            </div>
-                
-                            <!-- STEP 5 -->
-                            <div class="row g-0 mb-3 position-relative">
-                                <div class="col-6 text-end pe-3">
-                                    <h5 class="m-0 fw-bold">Taglio torta</h5>
-                                    <p class="m-0 small">A seguire</p>
-                                </div>
-                                <div class="col-6"></div>
-                
-                                <div class="position-absolute start-50 translate-middle"
-                                     style="
-                                        width: 20px;
-                                        height: 20px;
-                                        border-radius: 50%;
-                                        background-color: var(--bs-body-bg);
-                                        border: 3px solid var(--bs-secondary);
-                                        top: 0;">
-                                </div>
+                            <div style="position: relative; padding-left: 50px;">
+                                <div style="
+                                    position: absolute;
+                                    left: 6px;
+                                    top: 0;
+                                    width: 18px;
+                                    height: 18px;
+                                    border-radius: 50%;
+                                    background: var(--bs-body-bg);
+                                    border: 3px solid var(--bs-secondary);
+                                "></div>
+                                <h5 class="fw-bold m-0">Taglio torta</h5>
+                                <p class="small m-0">A seguire</p>
                             </div>
                 
                         </div>
                     </div>
                 </section>
-
-
-
-
-
 
 
                 <!-- Gallery -->
