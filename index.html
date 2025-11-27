@@ -414,104 +414,137 @@
                     </div>
                 </section>
 
-               <section class="bg-white-black pb-4 pt-2">
+                <section class="bg-white-black pb-4 pt-2">
                     <div class="container">
                 
                         <h2 class="font-esthetic text-center mb-4" style="font-size: 2rem;">
                             Programma della Giornata
                         </h2>
                 
-                        <div class="timeline mx-auto" style="max-width: 600px; position: relative;">
+                        <div style="max-width: 700px; margin: 0 auto; position: relative;">
                 
-                            <!-- LINEA -->
+                            <!-- Linea centrale -->
                             <div style="
                                 position: absolute;
-                                left: 15px;
-                                top: 10px;
-                                bottom: 10px;
+                                top: 0;
+                                bottom: 0;
+                                left: 50%;
                                 width: 2px;
                                 background: rgba(108,117,125,0.35);
+                                transform: translateX(-50%);
                             "></div>
                 
-                            <!-- STEP -->
-                            <div style="position: relative; padding-left: 50px; margin-bottom: 40px;">
+                            <!-- STEP 1 -->
+                            <div style="display: flex; margin-bottom: 40px; position: relative;">
+                                <div style="width: 50%; text-align: right; padding-right: 20px;">
+                                    <h5 class="fw-bold m-0">Arrivo ospiti</h5>
+                                    <p class="small m-0">Ore 09:30</p>
+                                </div>
+                
+                                <!-- cerchio -->
                                 <div style="
                                     position: absolute;
-                                    left: 6px;
-                                    top: 0;
-                                    width: 18px;
-                                    height: 18px;
-                                    border-radius: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, 0);
+                                    width: 20px;
+                                    height: 20px;
                                     background: var(--bs-body-bg);
+                                    border-radius: 50%;
                                     border: 3px solid var(--bs-secondary);
                                 "></div>
-                                <h5 class="fw-bold m-0">Arrivo ospiti</h5>
-                                <p class="small m-0">Ore 09:30</p>
+                
+                                <div style="width: 50%;"></div>
                             </div>
                 
-                            <div style="position: relative; padding-left: 50px; margin-bottom: 40px;">
+                            <!-- STEP 2 -->
+                            <div style="display: flex; margin-bottom: 40px; position: relative;">
+                                <div style="width: 50%;"></div>
+                
+                                <!-- cerchio -->
                                 <div style="
                                     position: absolute;
-                                    left: 6px;
-                                    top: 0;
-                                    width: 18px;
-                                    height: 18px;
-                                    border-radius: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, 0);
+                                    width: 20px;
+                                    height: 20px;
                                     background: var(--bs-body-bg);
+                                    border-radius: 50%;
                                     border: 3px solid var(--bs-secondary);
                                 "></div>
-                                <h5 class="fw-bold m-0">Cerimonia</h5>
-                                <p class="small m-0">Ore 10:00</p>
+                
+                                <div style="width: 50%; text-align: left; padding-left: 20px;">
+                                    <h5 class="fw-bold m-0">Cerimonia</h5>
+                                    <p class="small m-0">Ore 10:00</p>
+                                </div>
                             </div>
                 
-                            <div style="position: relative; padding-left: 50px; margin-bottom: 40px;">
+                            <!-- STEP 3 -->
+                            <div style="display: flex; margin-bottom: 40px; position: relative;">
+                                <div style="width: 50%; text-align: right; padding-right: 20px;">
+                                    <h5 class="fw-bold m-0">Aperitivo</h5>
+                                    <p class="small m-0">Ore 12:00</p>
+                                </div>
+                
                                 <div style="
                                     position: absolute;
-                                    left: 6px;
-                                    top: 0;
-                                    width: 18px;
-                                    height: 18px;
-                                    border-radius: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, 0);
+                                    width: 20px;
+                                    height: 20px;
                                     background: var(--bs-body-bg);
+                                    border-radius: 50%;
                                     border: 3px solid var(--bs-secondary);
                                 "></div>
-                                <h5 class="fw-bold m-0">Aperitivo</h5>
-                                <p class="small m-0">Ore 12:00</p>
+                
+                                <div style="width: 50%;"></div>
                             </div>
                 
-                            <div style="position: relative; padding-left: 50px; margin-bottom: 40px;">
+                            <!-- STEP 4 -->
+                            <div style="display: flex; margin-bottom: 40px; position: relative;">
+                                <div style="width: 50%;"></div>
+                
                                 <div style="
                                     position: absolute;
-                                    left: 6px;
-                                    top: 0;
-                                    width: 18px;
-                                    height: 18px;
-                                    border-radius: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, 0);
+                                    width: 20px;
+                                    height: 20px;
                                     background: var(--bs-body-bg);
+                                    border-radius: 50%;
                                     border: 3px solid var(--bs-secondary);
                                 "></div>
-                                <h5 class="fw-bold m-0">Pranzo / Ricevimento</h5>
-                                <p class="small m-0">Ore 13:00</p>
+                
+                                <div style="width: 50%; text-align: left; padding-left: 20px;">
+                                    <h5 class="fw-bold m-0">Pranzo / Ricevimento</h5>
+                                    <p class="small m-0">Ore 13:00</p>
+                                </div>
                             </div>
                 
-                            <div style="position: relative; padding-left: 50px;">
+                            <!-- STEP 5 -->
+                            <div style="display: flex; position: relative;">
+                                <div style="width: 50%; text-align: right; padding-right: 20px;">
+                                    <h5 class="fw-bold m-0">Taglio torta</h5>
+                                    <p class="small m-0">A seguire</p>
+                                </div>
+                
                                 <div style="
                                     position: absolute;
-                                    left: 6px;
-                                    top: 0;
-                                    width: 18px;
-                                    height: 18px;
-                                    border-radius: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, 0);
+                                    width: 20px;
+                                    height: 20px;
                                     background: var(--bs-body-bg);
+                                    border-radius: 50%;
                                     border: 3px solid var(--bs-secondary);
                                 "></div>
-                                <h5 class="fw-bold m-0">Taglio torta</h5>
-                                <p class="small m-0">A seguire</p>
+                
+                                <div style="width: 50%;"></div>
                             </div>
                 
                         </div>
                     </div>
                 </section>
+
 
 
                 <!-- Gallery -->
