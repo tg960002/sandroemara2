@@ -523,24 +523,49 @@
                         <p class="mb-1" style="font-size: 0.95rem;">Il regalo più bello è avervi con noi. Se volete aggiungere un pezzetto di viaggio, lo porteremo con noi ovunque andremo.✈️</p>
 
                         <div class="bg-theme-auto rounded-4 shadow p-3 mx-4 mt-4 text-start" data-aos="fade-up" data-aos-duration="2500">
-                            <i class="fa-solid fa-money-bill-transfer"></i>
-                            <p class="d-inline">Bonifico</p>
+    <i class="fa-solid fa-money-bill-transfer"></i>
+    <p class="d-inline">Bonifico</p>
 
-                            <div class="d-flex justify-content-between align-items-center mt-2">
-                                <p class="m-0 p-0" style="font-size: 0.95rem;"><i class="fa-regular fa-user fa-sm me-1"></i>Gammaidoni Tamara Gubbiotti Alessandro</p>
-                                <button class="btn btn-outline-auto btn-sm shadow-sm rounded-4 py-0" style="font-size: 0.75rem;" data-bs-toggle="collapse" data-bs-target="#collapseTf"><i class="fa-solid fa-circle-info fa-sm me-1"></i>Info</button>
+                            <!-- Nome -->
+                            <p class="mt-2 mb-1" style="font-size: 0.95rem;">
+                                <i class="fa-regular fa-user fa-sm me-1"></i>
+                                Gammaidoni Tamara Gubbiotti Alessandro
+                            </p>
+                        
+                            <!-- IBAN visibile -->
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="m-0 p-0" style="font-size: 0.9rem;">
+                                    <i class="fa-solid fa-credit-card me-1"></i>
+                                    IT81 I062 3003 0040 0001 5578 902
+                                </p>
+                        
+                                <button
+                                    class="btn btn-outline-auto btn-sm shadow-sm rounded-4 py-0"
+                                    style="font-size: 0.75rem;"
+                                    data-copy="IT81I0623003004000015578902"
+                                    onclick="undangan.util.copy(this)">
+                                    <i class="fa-solid fa-copy"></i>
+                                </button>
                             </div>
-
-                            <div class="collapse" id="collapseTf">
+                        
+                            <!-- Info extra opzionali -->
+                            <button
+                                class="btn btn-outline-auto btn-sm shadow-sm rounded-4 py-0 mt-1"
+                                style="font-size: 0.75rem;"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTf">
+                                <i class="fa-solid fa-circle-info fa-sm me-1"></i>Info banca
+                            </button>
+                        
+                            <div class="collapse mt-2" id="collapseTf">
                                 <hr class="my-2 py-1">
-                                <p class="m-0" style="font-size: 0.9rem;"><i class="fa-solid fa-building-columns me-1"></i>Credit Agricole (Filiale 3,Perugia)</p>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <p class="m-0 p-0" style="font-size: 0.85rem;"><i class="fa-solid fa-credit-card me-1"></i>IT81I0623003004000015578902</p>
-                                    <!-- Ubah juga data-copy sesuai dengan no rekening -->
-                                    <button class="btn btn-outline-auto btn-sm shadow-sm rounded-4 py-0" style="font-size: 0.75rem;" data-copy="IT81I0623003004000015578902" onclick="undangan.util.copy(this)"><i class="fa-solid fa-copy"></i></button>
-                                </div>
+                                <p class="m-0" style="font-size: 0.9rem;">
+                                    <i class="fa-solid fa-building-columns me-1"></i>
+                                    Credit Agricole (Filiale 3, Perugia)
+                                </p>
                             </div>
                         </div>
+
                     </div>
                 </section>
 
