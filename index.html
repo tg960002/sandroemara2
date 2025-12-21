@@ -122,7 +122,6 @@
             <!-- Main Content -->
             <main data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-root-margin="25% 0% 0% 0%" data-bs-smooth-scroll="true" tabindex="0">
 
-                
                 <!-- Home -->
                 <section id="home" class="bg-light-dark position-relative overflow-hidden p-0 m-0">
                     <img src="./assets/images/placeholder.webp" data-src="./assets/images/profilo.webp" alt="bg" class="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home">
@@ -336,7 +335,8 @@
                 </div>
 
                 <!-- Wedding Date -->
-                <section class="bg-white-black pb-4 pt-2" id="wedding-date">
+
+                <section class="bg-white-black pb-4 pt-2">
                     <div class="container">
                 
                         <h2 class="font-esthetic text-center mb-4" style="font-size: 2rem;">
@@ -517,7 +517,7 @@
                 </div>
 
                 <!-- Love Gift -->
-                <section class="bg-light-dark pb-3"  id="gift">
+                <section class="bg-light-dark pb-3">
                     <div class="container text-center">
                         <h2 class="font-esthetic pt-3 mb-4" style="font-size: 2.25rem;">Lista Nozze</h2>
                         <p class="mb-1" style="font-size: 0.95rem;">Il regalo più bello è avervi con noi. Se volete aggiungere un pezzetto di viaggio, lo porteremo con noi ovunque andremo.✈️</p>
@@ -581,22 +581,59 @@
                   </div>
                 </section>
 
-                <!-- FIne -->
-                <section class="bg-light-dark py-4">
-                  <div class="container text-center">
-                    <div class="border rounded-5 shadow p-4">
-                      <h2 class="font-esthetic mb-3" style="font-size: 2.25rem;">
-                        Grazie!
-                      </h2>
-                      <p class="m-0" style="font-size: 1rem;">
-                        Non vediamo l’ora di festeggiare insieme a voi 💛
-                      </p>
+                <!-- Comment -->
+                <section class="bg-light-dark my-0 pb-0 pt-3" id="comment">
+                    <div class="container">
+                        <div class="border rounded-5 shadow p-3 mb-2">
+                            <h2 class="font-esthetic text-center mt-2 mb-4" style="font-size: 2.25rem;">Ucapan &amp; Doa</h2>
+
+                            <div class="mb-3">
+                                <label for="form-name" class="form-label my-1"><i class="fa-solid fa-person me-2"></i>Nama</label>
+                                <input dir="auto" type="text" class="form-control shadow-sm rounded-4" id="form-name" minlength="2" maxlength="50" placeholder="Isikan Nama Anda" autocomplete="name" data-offline-disabled="false">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="form-presence" class="form-label my-1"><i class="fa-solid fa-person-circle-question me-2"></i>Presensi</label>
+                                <select class="form-select shadow-sm rounded-4" id="form-presence" autocomplete="off" data-offline-disabled="false">
+                                    <option value="0" selected>Konfirmasi Presensi</option>
+                                    <option value="1">&#9989; Datang</option>
+                                    <option value="2">&#10060; Berhalangan</option>
+                                </select>
+                            </div>
+
+                            <div class="d-block mb-3" id="comment-form-default">
+                                <div id="information" class="alert alert-info alert-dismissible fade show rounded-4" role="alert">
+                                    <button type="button" class="btn-close rounded-4 p-3" data-bs-dismiss="alert" aria-label="Close" onclick="undangan.guest.closeInformation()"></button>
+
+                                    <p style="font-size: 1.5rem;">Bestieee!!!</p>
+                                    <p class="m-0">Cobain like seperti Instagram, dengan tap tap bagian komentarnya</p>
+                                    <hr class="my-2">
+                                    <p class="m-0">Sama bisa format text seperti Whatsapp lohh... cobainn jugaaa, makaciwww bestieee</p>
+                                </div>
+
+                                <label for="form-comment" class="form-label my-1"><i class="fa-solid fa-comment me-2"></i>Ucapan &amp; Doa</label>
+                                <div class="position-relative">
+                                    <button class="btn btn-secondary btn-sm rounded-4 shadow-sm me-1 my-1 position-absolute bottom-0 end-0" onclick="undangan.comment.gif.open(undangan.comment.gif.default)" aria-label="button gif" data-offline-disabled="false"><i class="fa-solid fa-photo-film"></i></button>
+                                    <textarea dir="auto" class="form-control shadow-sm rounded-4" id="form-comment" rows="4" minlength="1" maxlength="1000" placeholder="Tulis Ucapan dan Doa" autocomplete="off" data-offline-disabled="false"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="d-none mb-3" id="gif-form-default"></div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm rounded-4 shadow m-1" onclick="undangan.comment.send(this)" data-offline-disabled="false">
+                                    <i class="fa-solid fa-paper-plane me-2"></i>Send
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comments -->
+                        <div class="py-3" id="comments" data-loading="false"></div>
+
+                        <!-- Pagination -->
+                        <nav class="d-flex d-none justify-content-center mt-1 mb-0" id="pagination"></nav>
                     </div>
-                  </div>
                 </section>
-
-
-
 
                 <!-- Wave Separator -->
                 <div class="svg-wrapper">
@@ -605,22 +642,30 @@
                     </svg>
                 </div>
 
-            
-<!-- End Of Invitation --> 
-            <section class="bg-white-black py-2 no-gap-bottom"> 
-                <div class="container text-center"> 
-                    <p class="pb-2 pt-4" style="font-size: 0.95rem;">Terima kasih atas perhatian dan doa restu Anda, yang menjadi kebahagiaan serta kehormatan besar bagi kami.
-                    </p> 
-                    <h2 class="font-esthetic" style="font-size: 2rem;">Wassalamualaikum Warahmatullahi Wabarakatuh</h2> 
-                    <h2 class="font-arabic pt-4" style="font-size: 2rem;">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ</h2> 
-                    <hr class="my-3"> 
-                    <div class="row align-items-center justify-content-between flex-column pb-3">
-                        <div class="col-auto"> <small>Build with<i class="fa-solid fa-heart mx-1"></i>Dewanakl</small> 
-                        </div> 
-                        <div class="col-auto"> <small><i class="fa-brands fa-github me-1"></i><a target="_blank" href="https://github.com/dewanakl/undangan">github</a></small> <small><i class="fa-solid fa-chart-simple me-1"></i><a target="_blank" href="https://status.ulems.my.id">status</a></small> <small><i class="fa-solid fa-music me-1"></i><a target="_blank" href="https://pixabay.com/music/modern-classical-pure-love-304010">music</a></small>
-                        </div> </div> </div> 
-            </section> 
+                <!-- End Of Invitation -->
+                <section class="bg-white-black py-2 no-gap-bottom">
+                    <div class="container text-center">
+                        <p class="pb-2 pt-4" style="font-size: 0.95rem;">Terima kasih atas perhatian dan doa restu Anda, yang menjadi kebahagiaan serta kehormatan besar bagi kami.</p>
+
+                        <h2 class="font-esthetic" style="font-size: 2rem;">Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
+                        <h2 class="font-arabic pt-4" style="font-size: 2rem;">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ</h2>
+
+                        <hr class="my-3">
+
+                        <div class="row align-items-center justify-content-between flex-column pb-3">
+                            <div class="col-auto">
+                                <small>Build with<i class="fa-solid fa-heart mx-1"></i>Dewanakl</small>
+                            </div>
+                            <div class="col-auto">
+                                <small><i class="fa-brands fa-github me-1"></i><a target="_blank" href="https://github.com/dewanakl/undangan">github</a></small>
+                                <small><i class="fa-solid fa-chart-simple me-1"></i><a target="_blank" href="https://status.ulems.my.id">status</a></small>
+                                <small><i class="fa-solid fa-music me-1"></i><a target="_blank" href="https://pixabay.com/music/modern-classical-pure-love-304010">music</a></small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
+
             <!-- Navbar Bottom -->
             <nav class="navbar navbar-expand sticky-bottom rounded-top-4 border-top p-0" id="navbar-menu">
                 <ul class="navbar-nav nav-justified w-100 align-items-center">
@@ -643,13 +688,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gift">
+                        <a class="nav-link" href="#gallery">
                             <i class="fa-solid fa-images"></i>
                             <span class="d-block" style="font-size: 0.7rem;">Lista Nozze</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#rsvp">
+                        <a class="nav-link" href="#comment">
                             <i class="fa-solid fa-comments"></i>
                             <span class="d-block" style="font-size: 0.7rem;">Rispondi all'invito!</span>
                         </a>
