@@ -193,6 +193,11 @@ export const comment = (() => {
      * @returns {Promise<ReturnType<typeof dto.getCommentsResponse>>}
      */
     const show = () => {
+    comments.innerHTML = onNullComment();
+    return Promise.resolve();
+    };
+
+    /*const show = () => {
 
         // remove all event listener.
         lastRender.forEach((u) => {
@@ -249,7 +254,7 @@ export const comment = (() => {
                 comments.dispatchEvent(new Event('undangan.comment.done'));
                 return res;
             });
-    };
+    }; */
 
     /**
      * @param {HTMLButtonElement} button 
@@ -671,8 +676,8 @@ export const comment = (() => {
         card.init();
         pagination.init();
 
-        /*comments = document.getElementById('comments');
-        comments.addEventListener('undangan.comment.show', show); */
+        comments = document.getElementById('comments');
+        comments.addEventListener('undangan.comment.show', show); 
 
         owns = storage('owns');
         showHide = storage('comment');
