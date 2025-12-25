@@ -671,8 +671,8 @@ export const comment = (() => {
         card.init();
         pagination.init();
 
-        comments = document.getElementById('comments');
-        comments.addEventListener('undangan.comment.show', show);
+        /*comments = document.getElementById('comments');
+        comments.addEventListener('undangan.comment.show', show); */
 
         owns = storage('owns');
         showHide = storage('comment');
